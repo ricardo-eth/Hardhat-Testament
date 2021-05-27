@@ -1,13 +1,13 @@
-const { ethers } = require("hardhat");
+const { ethers } = require('hardhat');
 
 async function main() {
-  const Testament = await ethers.getContractFactory("Testament");
+  const Testament = await ethers.getContractFactory('Testament');
   console.log(Testament);
   const testament = await Testament.deploy();
 
   await testament.deployed();
 
-  console.log("Testament deployed to:", testament.address);
+  console.log('Testament deployed to:', testament.address);
 }
 
 main()
