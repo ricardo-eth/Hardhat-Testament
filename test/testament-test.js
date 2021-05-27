@@ -1,8 +1,7 @@
-/* eslint-disable comma-dangle */
-/* eslint-disable no-unused-expressions */
-/* eslint-disable no-undef */
 /* eslint-disable no-unused-vars */
+/* eslint-disable quotes */
 const { expect } = require('chai');
+const { ethers } = require('hardhat');
 
 describe('Testament', () => {
   let dev, owner, doctor, nextDoctor, recipient1, recipient2, Testament, testament;
